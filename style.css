@@ -581,3 +581,29 @@ button[type="submit"] {
     margin-bottom: 25px;
     margin-top: -25px;
 }
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Adjust font sizes, padding, margins, etc. */
+    body {
+      font-size: 16px;
+    }
+    /* Hide or stack elements as needed */
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  /* Tablet and desktop styles */
+  @media (min-width: 769px) {
+    /* Adjust styles for larger screens */
+    body {
+      font-size: 18px;
+    }
+    /* Show elements hidden for mobile */
+    .sidebar {
+      display: block;
+    }
+  }
+  
