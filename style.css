@@ -1,0 +1,583 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+header {
+    background-color:#2b4162;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #bf5700; 
+}
+
+section {
+    padding: 100px 0;
+    margin-left: 35px;
+    /* background-color: beige; */
+    background-color: white;
+    padding-bottom: 0px;
+    
+}
+
+.hero{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.hero-content {
+    color: #141313;
+    padding: 20px;
+    /* margin-top: 5px; */
+    font-size: 20px;
+    align-items: center;
+    margin-left: 10px;
+    padding-top: 0%;
+    display: flex;
+   
+    }
+
+    .intro{
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-left: 140px;
+        
+    }
+
+    
+    .intro h1{
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-left: 100px;
+        
+    }
+
+
+.myImage{
+    /* float:right; */
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 200px;
+
+}
+
+strong{
+    font-size: 80px;
+    color: #2b4162;
+    padding-top:100px;
+    margin-left: 10px;
+  
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bf5700;
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 80px;
+    border-radius: 5px;
+    font-weight: bold;
+   
+}
+
+
+
+/* Bio section */
+
+#bio {
+    background-color: white; /* Background color for the Bio section */
+    margin-bottom: 0px;
+    margin-top: 120px;
+    border-radius: 20px;
+    margin-left: 0%;
+   
+       
+}
+
+.row{
+    /* border: 5px #ccc solid;  */
+    margin-right: 0px;
+    
+}
+
+.about container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 50px 50px; */
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+
+}
+
+.bio h1{
+    font-size: 70px;
+    color: #bf5700;
+    text-align: center;
+   
+    
+}
+ 
+.column {
+    box-sizing: border-box;
+    float: left;
+    padding: 50px;
+    height: 600px; /* Should be removed. Only for demonstration */
+    border: 2px black solid;
+    border-radius: 10px;
+ 
+  }
+  
+  .left {
+    width: 45%;
+    background-image: url(Images/face.jpg);
+    background-size:cover;
+    background-position:initial;
+    background-repeat: no-repeat;
+  }
+  
+  .right {
+    width: 55%;
+    background-color:white;
+   
+    
+  }
+
+  .right h1{
+    color:#2b4162;
+   font-size: 35px;
+  }
+
+  .right p{
+    font-size: 20px;
+   text-align: justify;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.right h3{
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2b4162;
+}
+
+.right ul{
+    align-items: center;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Services */
+#services{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+  /* Style for the services header container */
+
+  div[services-header] {
+    text-align: center;
+    /* background-image: url(/Images/img2.jpg); */
+    /* opacity: 0.5; */
+    /* background-size: cover;  
+    background-position: center; */
+    /* background-color: black; */
+    /* color:white; */
+    padding: 0px;
+    padding-top: 20px;
+    
+    
+}
+
+/* Style for the h1 element (Services title) */
+div[services-header] h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #bf5700;
+    margin-top: 0px;
+}
+
+/* Style for the p element (Description text) */
+div[services-header] p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Style links within the description text */
+.services{
+    margin-top: 0px;
+    background-color:white;
+    height: 800px;
+    padding-left: 80px;
+    border-radius: 10px;
+}
+
+
+.service-container{
+
+	position: relative;
+	/* width:1000px; */
+	display: flex;
+	justify-content: space-between; 
+	align-items: flex-start;
+    flex: 2;
+	/* flex-wrap: wrap; */
+	padding: 30px;
+	margin-top: 0px;
+     /* padding-left: 86px; */
+  
+}
+
+.service-container .services{
+	width:500px;
+	position: relative;
+	height: 230px;
+  /* background-image: url(/Images/img2.jpg); */
+  /* background-size: cover;  */
+  /* background-position: center; */
+  /* opacity: 0.5; */
+  background-color:#2b4162;
+  /* background: #ccc; */
+    /* border: 3px black ; */
+	margin:30px 10px;
+	padding: 20px 15px;
+	display:flex;
+	flex-direction: column;
+	margin-top: 5%;
+}
+
+
+
+.service-container .services h2{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  
+  
+}
+
+.service-container .services p{
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    /* padding: 10px; */
+    text-align: justify;
+
+}
+
+ /* resume section  */
+
+.resume {
+    max-width: 1100px;
+    max-height: 1650px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    text-align: justify;
+    padding-top: 50px;
+    margin-top: 10px;
+    
+    
+}
+
+.resume-items{
+    border: 1px black solid;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    
+}
+
+
+.resume h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color:#2b4162;
+}
+.resume h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:#2b4162;
+    padding-top: 15px;
+}
+.resume p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+.resume ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+
+
+  /* Styles for the Testimonial Section */
+  .testimonial {
+    background-color: #f5f5f5;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.testimonial h2 {
+    font-size: 70px;
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 30px;
+    color: #bf5700;
+    
+}
+
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0px 0px 50px 15px;
+    height: 400px;
+    width: 290px;
+    display: inline-flex;
+    text-align: justify;
+    border-radius: 30px;
+    
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 30px;
+    
+}
+
+
+
+/* Style the form elements */
+
+.contact h1 {
+    /* text-align: center; */
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 70px;
+    color: #bf5700;
+}
+
+.container {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    margin-left: 380px;
+}
+
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #2b4162;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  /* Styles for the Footer */
+  footer {
+    background-color: #2b4162;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    list-style-position: outside;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.links ul{
+    list-style: none;
+    list-style-position: outside;
+    padding: 0px;
+}
+.links li{
+    list-style: none;
+    list-style-position: outside;
+    padding: 0px;
+    text-align: left; /*list items start on same line */
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 0px;
+    margin-left: 0px;
+    transition: color 0.3s ease-in-out;
+    
+    
+}
+
+
+.footer li{
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    /* margin-right: 0px; */
+    transition: color 0.3s ease-in-out;
+    list-style: none;
+    list-style-position: outside;
+    
+    
+}
+
+.social-media a {
+    text-align: left; /*list items start on same line */
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    /* margin-right: 0px; */
+    margin-left: 170px;
+    transition: color 0.3s ease-in-out;
+    list-style-position: outside;
+    
+}
+
+.social-media li {
+    text-align: left; /*list items start on same line */
+    
+   
+}
+
+.social-media a:hover {
+    color: #bf5700;
+}
+
+/* .social-media img {
+    width: 18px;
+    height: 18px;
+    border-radius: 20%;
+    transition: transform 0.3s ease-in-out;
+    align-self: baseline;
+    text-align: left; 
+} */
+
+.contact-info p {
+    margin: 0;
+    text-align: left; /*list items start on same line */
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+.links h3{
+    margin-bottom: 25px;
+}
+
+.social-media h3{
+    margin-bottom: 25px;
+    margin-left: 170px;
+}
+
+.contact-info h3{
+    margin-bottom: 25px;
+    margin-top: -25px;
+}
