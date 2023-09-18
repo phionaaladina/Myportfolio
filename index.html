@@ -29,7 +29,7 @@
                 <p>Digital Literacy Trainer | Web Developer</p>
                 <a href="#resume" class="cta-button">View Resume</a>
             </div>
-            <img src="./Images/homeimg.jpg" alt="image" class="myImage"/>
+            <img src="./Images/homeimg.jpg" alt="image" class="myImage" />
         </div>
     </section>
 
@@ -319,19 +319,44 @@
 
 <script>
   var form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
-e.preventDefault();
-fetch(form.action, {
-    method : "POST",
-    body: new FormData(document.getElementById("sheetdb-form")),
-}).then(
-    response => response.json()
-).then((html) => {
-  // you can put any JS code here
-  window.open('welcome.html', '_blank');
 
-});
-});
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+      response => response.json()
+    ).then((html) => {
+      // Clear form inputs
+      clearFormInputs();
+
+      // Open a new window or redirect to a success page
+      window.open('welcome.html', '_blank');
+    });
+  });
+
+  function clearFormInputs() {
+    // Get all form elements within the form
+    var formElements = form.elements;
+
+    // Loop through each form element
+    for (var i = 0; i < formElements.length; i++) {
+      var element = formElements[i];
+
+      // Check if the element is an input, select, or textarea
+      if (
+        element.tagName === 'INPUT' ||
+        element.tagName === 'SELECT' ||
+        element.tagName === 'TEXTAREA'
+      ) {
+        // Clear the value of the element
+        element.value = '';
+      }
+    }
+  }
 </script>
+
 </body>
 </html>
