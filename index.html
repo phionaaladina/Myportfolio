@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aladina portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="mediastyles.css">
     <link  href="welcome.html" >
 </head>
 <body>
@@ -15,34 +16,62 @@
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#testimonial">Testimonials</a></li>
+                <!-- <li><a href="#testimonial">Testimonials</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>  
 
-    <section id="hero">
-        <div class="hero-content">
+    <section id="hero" class="hero">
+       
             <div class="intro">
-                <h1>Hello, I'm </h1>
-                <h2><strong>Aladina</strong></h2>
-                <p>Digital Literacy Trainer | Web Developer</p>
+                <!-- <h1>Hello, I'm Aladina</h1> -->
+                <h2><strong>Hello, I'm Aladina</strong></h2> <br>
+                <p>Digital Literacy Trainer | Web Developer | Tech Mentor</p>
                 <a href="#resume" class="cta-button">View Resume</a>
             </div>
-            <img src="./Images/homeimg.jpg" alt="image" class="myImage" />
-        </div>
+            <!-- <img src="./Images/homeimg.jpg" alt="image" class="myImage" /> -->
+        
     </section>
 
   
 
   
     <section class="bio" id="bio">
-        <h1>About Me</h1>
-        <div class="row">
-          <div class="column left">
+        <h2>About Me</h2>
+
+          <div class="bio-content" >
+            <!-- <h3>FIONA A. ALADINA</h3> -->
             
-            <!-- <p>Some text..</p> -->
+            <p>Programs Associate at Women In Technology Uganda.
+            Teachable Avid learner,technology enthusiast and a top-notch digital skills trainer, IT Desktop Support.  
+            Renowned for unwavering commitment and exceptional time management skills, I'm known for navigating seamlessly
+            through diverse team settings, transforming challenges into opportunities. </p>
+
+            <h4>KEY ACHIEVEMENTS/HIGHLIGHTS</h4>
+            <ul>
+            <li>Over 500 young women trained in ICT skills.</li>
+            <li>Over 300 young women trained in Life Skills and Entrepreneurship.</li>
+            <li>80% of enrolled young women have had improved businesses, new businesses started and obtained jobs.</li>
+            </ul>
+
+                <h4>SELF- TAUGHT FULLSTACK DEVELOPER</h4>
+                <ul>
+                   <li><b>Languages:</b> Python, PHP, HTML, CSS, Javascript</li>
+                   <li><b>Libraries:</b>React</li>
+                   <li><b>Frameworks:</b> Django, Flask, Laravel, Bootstrap</li>
+                   <li><b>Database:</b> SQL</li>
+                   <li><b>Tools:</b> Github, Trello, Monday, Asana</li>
+                </ul>
+               
+           
           </div>
+        
+        <!-- <div class="row">
+          <div class="column left">
+             -->
+            <!-- <p>Some text..</p> -->
+          <!-- </div>
           <div class="column right" >
             <h1>FIONA A. ALADINA</h1>
             
@@ -56,8 +85,8 @@
             <li>Over 500 young women trained in ICT skills.</li>
             <li>Over 300 young women trained in Life Skills and Entrepreneurship.</li>
             <li>80% of enrolled young women have had improved businesses, new businesses started and obtained jobs.</li>
-            </ul>
-
+            </ul> -->
+<!-- 
                 <h3>SELF- TAUGHT FULLSTACK DEVELOPER</h3>
                 <ul>
                    <li><b>Languages:</b> Python, PHP, HTML, CSS, Javascript</li>
@@ -65,11 +94,11 @@
                    <li><b>Frameworks:</b> Django, Flask, Laravel, Bootstrap</li>
                    <li><b>Database:</b> SQL</li>
                    <li><b>Tools:</b> Github, Trello, Monday, Asana</li>
-                </ul>
+                </ul> -->
                
            
-          </div>
-        </div>
+          <!-- </div>
+        </div> -->
 
           
       </section>
@@ -119,7 +148,7 @@
 
 <section id="resume" class="resume">
 
-        <h1 class="resume-header" style="text-align: center;font-size: 70px;color: #bf5700;">My Resume</h1>
+        <h1 class="resume-header" style="text-align: center;color: #bf5700;">My Resume</h1>
    
         <div class="resume-items">
         <h1>Fiona A. Aladina</h1>
@@ -213,9 +242,9 @@
           </ul>
 </div>
 </section>
+ 
 
-
-<section class="testimonial" id="testimonial">
+<!-- <section class="testimonial" id="testimonial">
     <h2>Testimonials</h2>
 
     <div class="testimonial-item">
@@ -258,8 +287,8 @@
 </div>
 </section>
 
-
-    <section id="contact" class="contact me" name="contact-me">
+ -->
+    <section id="contact" class="contact-me" name="contact-me">
         <h1 class="form head">Contact me</h1>
         <div class="container">
             
@@ -292,8 +321,8 @@
             <li>  <a href="#home">Home</a></li> 
             <li> <a href="#bio">Bio</a></li> 
             <li> <a href="#resume">Resume</a></li> 
-            <li> <a href="#resume">Services</a></li> 
-            <li> <a href="#testimonial">Testimonial</a></li> 
+            <li> <a href="#services">Services</a></li> 
+            <!-- <li> <a href="#testimonial">Testimonial</a></li>  -->
       
             </div>
     
@@ -314,7 +343,7 @@
         
     </div>
     <br>
-    <p>&copy; 2023 Fiona A. Aladina | All Rights Reserved.</p>
+    <p class="copyright">&copy; 2023 Fiona A. Aladina | All Rights Reserved.</p>
 </footer>
 
 <script>
