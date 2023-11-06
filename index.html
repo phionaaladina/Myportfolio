@@ -1,235 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <header>
-    <nav id="desktop-nav" class="desktop-nav">
-      <div class="logo">Fiona A. Aladina</div>
-      <div>
-        <ul class="nav-links">
-           <li><a href="/index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <!-- <li><a href="#projects">Projects</a></li> -->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Fiona A. Aladina</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aladina Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="logo">Fiona A. Aladina</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <!-- <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-
-  </header>
-    <section id="profile">
-      <!-- <div class="section__pic-container">
-        <img src="./assets/homeimg.jpg" alt="aladina pic" />
-      </div> -->
-      <div class="section__text">
-        <!-- <p class="section__text__p1">Hello, I'm</p> -->
-        <h1 class="title">Hello, I'm Aladina</h1>
-        <p class="section__text__p2">Tech Enthusiast | Web Developer | Trainer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/phionaaladina'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/phionaaladina'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <!-- <p class="section__text__p1">Get To Know More</p> -->
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/face.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-            
-                  <h3>Tech Enthusiast | Web Developer | Trainer </h3>
-            </div>
-           
-          <div class="text-container">
-            <p>
-Passionate about technology and its endless possibilities. I'm a web developer who crafts stunning websites and a trainer who loves sharing tech knowledge. Let's explore the digital world together!
-<b>Impact:</b> <br>
-<li>Trained over 500 young women in ICT skills.</li>
-<li>Empowered over 300 young women with Life Skills and Entrepreneurship training.</li>
-<li>Witnessed an 80% success rate, with enrolled young women improving their businesses, starting new ventures, and securing jobs.</li>
-
-            </p>
+      </nav>
+      <nav id="mobile-nav">
+        <div class="logo">Fiona A. Aladina</div>
+        <div class="mobile-menu">
+          <div class="mobile-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      </nav>
+
+
+
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./images/homeimg.jpg" alt="Aladina profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Aladina</h1>
+          <p class="section__text__p2">Empowering you with tech skills, one click at a time.</p>
+          <!-- <p class="section__text__p2">Bringing Digital Visions to Life, Front to Back</p> -->
+
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./images/resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Me
+            </button>
+          </div>
+        
+        </div>
+      </section>
+
+      <section id="about">
+        
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+         
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+               
+                <h3>Passionate Web Developer and Tech Educator </h3>
+               
+              </div>
+            
+            </div>
+            <div class="text-container">
+              <p>
+
+<br>I'm a web developer deeply passionate about technology and its boundless potential. 
+With a knack for crafting captivating websites, I've also trained over 
+500 young women in ICT skills.
+<br>Beyond coding, I've empowered 300+ young women with life skills and entrepreneurship 
+training, resulting in an impressive 80% success rate. <br>My interests extend to 3D printing,
+ Virtual Reality, Augmented Reality, and microbits, where I see endless opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+
     </section>
-    <section id="experience">
-      <!-- <p class="section__text__p1">Explore My</p> -->
-      <h1 class="title">Professional Skillset</h1>
-      <div class="experience-details-container">
+    <section id="skills">
+    
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <!-- <h2 class="experience-sub-title">Languages:</h2> -->
+            <h2 class="skills-sub-title">Web Development</h2>
             <div class="article-container">
               <article>
                 
                 <div>
                   <h3>HTML</h3>
-            
+                  
                 </div>
               </article>
               <article>
-            
+                
                 <div>
                   <h3>CSS</h3>
-          
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>JavaScript</h3>
-            
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Python</h3>
-              
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Github</h3>
-              
-                </div>
-              </article>
-
-              <article>
-                <div>
-                  <h3>Trello/Monday</h3>
-              
-                </div>
-              </article>
-
-              <article>
-                <div>
-                  <h3>React</h3>
-              
-                </div>
-              </article>
-
-              <article>
-                <div>
-                  <h3>Laravel</h3>
-              
-                </div>
-              </article>
-
-              <article>
-                <div>
-                  <h3>SQL</h3>
-              
-                </div>
-              </article>
-
-              <article>
-                <div>
-                  <h3>Flask</h3>
-              
-                </div>
-              </article>
-            
-            </div>
-          </div>
-          <!-- <div class="details-container">
-          
-            <div class="article-container">
-              <article>
-          
-                <div>
-                  <h3>PHP</h3>
-                 
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Node JS</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Frameworks: Django, Flask, Laravel, Bootstrap</h3>
-            
+                  
                 </div>
               </article>
               <article>
                
                 <div>
-                  <h3>Tools: Github, Trello, Monday, Asana</h3>
+                  <h3>JavaScript</h3>
+                  
+                </div>
+              </article>
+              <article>
+              
+                <div>
+                  <h3>PHP</h3>
+                  
+                </div>
+              </article>
+              <article>
+              
+                <div>
+                  <h3>Python</h3>
+                  
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>SQL</h3>
                 
                 </div>
-              </article> -->
+              </article>
             </div>
           </div>
-        </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+               
+                <div>
+                  <h3>Github</h3>
+                  
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>Trello</h3>
+                  
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>Monday</h3>
+                  
+                </div>
+              </article>
+              <article>
+               
+                <div>
+                  <h3>Asana</h3>
+                
+                </div>
+              </article>
+            </div>
+          </div>
+          </div>
+          
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+
     
+
+      <div class="container">
+					
+        <div class="card">
+          <div class="imgBx">
+            <a href="#">
+            <img src="./images/3d.webp">
+            </a>
+          
+            <h2>3D PRINTING </h2>
+            <p><br>Experienced in designing, operating 3D printers, and teaching the process of creating
+               physical objects from digital models using 3D printing technology.
+            </p>
+            
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="imgBx">
+            <a href="#">
+            <img src="./images/Mixed-Reality.png">
+            </a>
+            <h2>VR and AR </h2>
+            <p><br>Skilled in creating immersive 
+              VR experiences and interactive AR applications,
+               with the ability to teach and demonstrate their use. 
+            </p>					
+  
+          </div>	
+        </div>	
+        
+        <div class="card">
+          <div class="imgBx">
+            <a href="#">
+            <img src="./images/scratch.jpeg">
+            </a>
+            <h2>SCRATCH  </h2>
+            <p><br>Can teach coding fundamentals using
+               visual blocks for interactive projects.
+            </p>
+          </div>	
+        </div>	
+  
+        <div class="card">
+          <div class="imgBx">
+            <a href="#">
+            <img src="./images/microbit.png">
+            </a>
+            <h2>MICROBITS  </h2>
+            <p><br>Experienced in programming and teaching 
+              using Micro:bits for hands-on learning and creative projects.
+            </p>
+          </div>	
+        </div>	
+        
+      </div>	
+    </section>
+
+
+    <section id="services" class="services">
+
+
+    </section>
+
+
+  
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -241,29 +264,23 @@ Passionate about technology and its endless possibilities. I'm a web developer w
         <div class="contact-info-container">
           <p>Phone: +256 773 874 765</p>
         </div>
-        <!-- <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div> -->
       
     </section>
-    <footer>
-      <nav>
+    <footer class="footer">
+      <nav >
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <!-- <li><a href="#projects">Projects</a></li> -->
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Github</a></li>
+            <li><a href="#experience">LinkedIn</a></li>
+            <li><a href="#projects">Twitter</a></li>
+            <li><a href="#contact">Facebook</a></li>
           </ul>
         </div>
       </nav>
       <p>Copyright &#169; 2023 Fiona A. Aladina. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+      
+      <script src="script.js"></script>
+</body>
 </html>
