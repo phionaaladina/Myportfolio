@@ -41,9 +41,11 @@ nav,
 }
 
 nav {
+  position: fixed; 
+  z-index: 1000; /* Ensure a high z-index value */
+  width: 100%;
   justify-content: space-around;
   background-color: var(--secondary-color);
-  /* background-color:#2b4162; */
   align-items: center;
   height: 17vh;
   
@@ -63,10 +65,10 @@ a {
 }
 
 a:hover {
-  color:  var(--secondary-color);
-  text-decoration: underline;
+  color:  var(--primary-color);
+  text-decoration:underline;
   text-underline-offset: 1rem;
-  text-decoration-color: var(--white);
+  text-decoration-color: var(--secondary-color);
 }
 
 .logo {
@@ -87,6 +89,7 @@ a:hover {
 .mobile-menu {
   position: relative;
   display: inline-block;
+ 
 }
 
 .mobile-icon {
@@ -96,6 +99,7 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+
 }
 
 .mobile-icon span {
@@ -108,7 +112,7 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: 1;
   background-color: var(--secondary-color);
   width: fit-content;
   max-height: 0;
@@ -181,6 +185,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  padding-top: 8.75rem;
 }
 
 .section__pic-container {
@@ -211,11 +216,13 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  color: var(--secondary-color);
 }
 
 .section__text__p2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--secondary-color);
 }
 
 .title {
@@ -252,7 +259,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: black 0.1rem solid;
+  border: #2b4162 0.1rem solid;
   
 }
 
@@ -268,11 +275,13 @@ section {
 }
 
 .btn-color-1:hover {
-  background:var(--secondary-color);
+  background:var(--white);
+  color: var(--secondary-color);
 }
 
 .btn-color-2 {
   background: none;
+  color: var(--secondary-color);
 }
 
 .btn-color-2:hover {
@@ -364,7 +373,7 @@ article {
 
 
 /* CONTACT SECTION */
-
+/* 
 #contact {
   display: flex;
   justify-content: center;
@@ -389,7 +398,7 @@ article {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
-}
+} */
 
 
 /* FOOTER SECTION */
@@ -460,3 +469,31 @@ footer p {
 
 
 
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-image {
+  flex: 1;
+  /* Add styles for the contact image */
+}
+
+.contact-info {
+  max-width: 400px; /* Adjust as needed */
+}
+
+/* Additional styling for better appearance */
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
