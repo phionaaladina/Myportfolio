@@ -1,6 +1,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+
+
+:root{
+  --primary-color:   #BF5700;
+  --secondary-color:    #2b4162;
+  --white: #fff;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -32,10 +42,11 @@ nav,
 
 nav {
   justify-content: space-around;
-  background-color:#2b4162;
+  background-color: var(--secondary-color);
+  /* background-color:#2b4162; */
   align-items: center;
   height: 17vh;
- 
+  
 }
 
 .nav-links {
@@ -45,22 +56,22 @@ nav {
 }
 
 a {
-  color: white;
+  color: var(--white);
   text-decoration:none;
-  text-decoration-color: white;
+  text-decoration-color: var(--white);
 
 }
 
 a:hover {
-  color:  #bf5700;
+  color:  var(--secondary-color);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: white;
+  text-decoration-color: var(--white);
 }
 
 .logo {
   font-size: 2rem;
-  color: white;
+  color: var(--white);
 }
 
 .logo:hover {
@@ -98,7 +109,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #2b4162;
+  background-color: var(--secondary-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -109,7 +120,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  background-color: #2b4162;
+  background-color: var(--secondary-color);
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
@@ -172,6 +183,7 @@ section {
 }
 
 .section__pic-container {
+ 
   display: flex;
   height: 400px;
   width: 400px;
@@ -181,11 +193,15 @@ section {
 
 .section__pic-container img{
     border-radius: 50%;
+  
 }
 
 .section__text {
   align-self: center;
   text-align: center;
+  padding: 30px;
+  white-space:nowrap;
+
 }
 
 .section__text p {
@@ -204,7 +220,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  color:#2b4162
+  color:var(--primary-color)
 }
 
 
@@ -229,11 +245,14 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  margin-top: 20px;
+  
 }
 
 .btn-color-1,
 .btn-color-2 {
   border: black 0.1rem solid;
+  
 }
 
 .btn-color-1:hover,
@@ -243,12 +262,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background-color: #2b4162;
-  color: white;
+  background-color: var(--secondary-color);
+  color:var(--white);
 }
 
 .btn-color-1:hover {
-  background:#bf5700;;
+  background:var(--secondary-color);
 }
 
 .btn-color-2 {
