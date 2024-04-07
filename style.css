@@ -24,7 +24,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
+p{
+  text-align: justify;
+}
 /* TRANSITION */
 
 a,
@@ -197,10 +199,10 @@ section {
   
 }
 
-.section__pic-container img{
-    border-radius: 50%;
+/* .section__pic-container img{
+    border-radius: 90%;
   
-}
+} */
 
 .section__text {
   align-self: center;
@@ -223,6 +225,8 @@ section {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--secondary-color);
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .title {
@@ -294,6 +298,7 @@ section {
 
 /* ABOUT SECTION */
 
+
 #about {
   position: relative;
 }
@@ -334,7 +339,28 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+ 
+} 
+
+#about-pic{
+  border-radius: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* SKILLS SECTION */
 
