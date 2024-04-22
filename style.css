@@ -539,63 +539,9 @@ footer p {
 
 
 
-/* FOOTER SECTION */
-/* 
-.copyright{
-  width: 100%;
-  height: 20px;
-  text-align: center;
-  padding: 25px 0;
-  background-color: var(--secondary-color);
-  color: var(--white);
-  font-weight: 300;
-
-} */
-
-
-.copyright{
-  display:flex;
-  flex-direction: row;
-
-  width: 100%;
-  height: 20px;
-  padding: 25px 0;
-  background-color: var(--secondary-color);
-  color: var(--white);
-  font-weight: 300;
-  /* position: absolute; */
-  /* margin-top: 20px; */
-}
-
-
-
-.copyright p{
-  color: var(--white);
-  }
-
-  .copyright ul {
-  list-style: none;
-   float: right;
-   display: flex;
-   flex-direction: row;
-   margin-left: 500px;
-  }
-
-
-  .copyright ul  li{
-justify-content: space-between;
-padding: 0 10px;
-list-style: none;
-    }
-
-    
-  .copyright ul  li a:hover{
-    text-decoration: none;
-        }
-
 
   
-
+/* CTA */
         .cta{
           padding: 5%;
           color: var(--secondary-color);
@@ -741,3 +687,135 @@ list-style: none;
   width: 100px;
   border-radius: 50%;
 }
+
+
+
+/* PROJECTS SECTION */
+
+#portfolio {
+  position: relative;
+  margin-bottom: 500px;
+}
+
+.color-container {
+  border-color: var(--blackvar);
+  background: rgb(250, 250, 250);
+}
+
+.portfolio-img {
+  border-radius: 2rem;
+  width: 350px;
+  height: 90%;
+}
+
+
+#vimg{
+  height: 270px;
+}
+
+
+
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION */
+/* 
+.copyright{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  padding: 25px 0;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-weight: 300;
+
+} */
+
+
+.copyright{
+  display:flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 20px;
+  padding: 25px 0;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-weight: 300;
+  /* position: absolute; */
+  /* margin-top: 100px; */
+}
+
+
+
+.copyright p{
+  color: var(--white);
+  }
+
+  .copyright ul {
+  list-style: none;
+   float: right;
+   display: flex;
+   flex-direction: row;
+   margin-left: 500px;
+  }
+
+
+  .copyright ul  li{
+justify-content: space-between;
+padding: 0 10px;
+list-style: none;
+    }
+
+    
+  .copyright ul  li a:hover{
+    text-decoration: none;
+        }
+
+
